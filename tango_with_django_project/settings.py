@@ -81,12 +81,8 @@ WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tango_with_django',
-		'HOST': '127.0.0.1',
-		'USER': 'root',
-		'PASSWORD': 'root',
-		'POST': '3306',
+        'ENGINE': 'django.db.backends.sqllite3',
+        'NAME': os.path.join(BASE_DIR,'db.sqllite3'),
     }
 }
 
